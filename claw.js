@@ -229,11 +229,15 @@ window.onresize = function(event) {
     that();
 };
 
-window.addEventListener("wheel", event => that());
-
-window.onscroll = function(e) {
+window.addEventListener("wheel", async function() {
+    await new Promise(r => setTimeout(r, timeouttime));
     that();
-}
+});
+
+window.addEventListener("scroll", async function() {
+    await new Promise(r => setTimeout(r, timeouttime));
+    that();
+});
 
 document.addEventListener("click", async function() {
     await new Promise(r => setTimeout(r, timeouttime));
