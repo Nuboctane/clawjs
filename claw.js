@@ -189,8 +189,13 @@ document.onkeypress = async function(e) {
                 for (let cl = 0; cl < clwed.length; cl++) {
                     clwed[cl].classList.remove('claw_this_one');
                 }
-                await new Promise(r => setTimeout(r, timeouttime));
-                that();
+                if (!clawed[0] instanceof HTMLInputElement) {
+                    await new Promise(r => setTimeout(r, timeouttime));
+                    that();
+                } else {
+                    hide('all');
+                    made = false;
+                }
             } else if (clawed.length > 1) {
                 let infected = document.querySelectorAll('button, input, textarea, select, a');
                 let broken = false;
@@ -230,12 +235,12 @@ window.onresize = function(event) {
 };
 
 window.addEventListener("wheel", async function() {
-    await new Promise(r => setTimeout(r, timeouttime));
+    await new Promise(r => setTimeout(r, timeouttime / 2));
     that();
 });
 
 window.addEventListener("scroll", async function() {
-    await new Promise(r => setTimeout(r, timeouttime));
+    await new Promise(r => setTimeout(r, timeouttime / 2));
     that();
 });
 
