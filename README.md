@@ -1,8 +1,9 @@
 <h1>clawjs</h1>
-![image](https://github.com/Nuboctane/clawjs/assets/72999487/63a15693-b958-482d-818f-e1ff60e6b9b2)
 
 A slightly adapted version of [Tridactyl](https://github.com/tridactyl/tridactyl/)
 but is easily injectable in any browser and is open source.
+
+![image](https://github.com/Nuboctane/clawjs/assets/72999487/1250d71e-c176-4a8b-b76d-515f95b7801a)
 
 Works in (as far as I'm concerned) any browser, this can easily be put into a local browser extension,
 you can make a browser extension locally and just use this code and unpack it in your browser's extension library.
