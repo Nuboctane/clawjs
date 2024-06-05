@@ -1,4 +1,5 @@
 <h1>clawjs</h1>
+![image](https://github.com/Nuboctane/clawjs/assets/72999487/63a15693-b958-482d-818f-e1ff60e6b9b2)
 
 A slightly adapted version of [Tridactyl](https://github.com/tridactyl/tridactyl/)
 but is easily injectable in any browser and is open source.
