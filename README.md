@@ -34,3 +34,10 @@ Press G and H simultaneously again to disable the frames.
 After enabling the frames, key tags are shown in the corner of each frame indicating which key you will have to press to interact with this element.
 When the key you want is pressed, all frames that did not have this key will disappear and the elements that remain will show new keys.
 this way you can narrow down quickly which element you want to interact with. Once there are no more combinations left, the element will be selected.
+
+<h2>known issues/TODO</h2>
+
+- G and H key combo could get triggered while interacting with any input elements inside the Document.
+- Elements that can be scrolled within themselves could show key labels not directly visible to the client on activation.
+- Event listeners of the page you're visiting might intervene with this script when/before activated.
+
