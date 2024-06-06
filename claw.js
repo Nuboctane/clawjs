@@ -1,9 +1,15 @@
+// author: @nuboctane
+// version: 1.0
+// license: None
+
+// key codes to whenever key labels are rendered
 let avaible = [113, 119, 101, 114, 116, 121, 117, 105, 111, 112, 108, 107, 106, 102, 100, 115, 97, 122, 120, 99, 118, 98, 110, 109, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57];
 let occupied = [];
 let made = false;
 let held = [];
-let timeouttime = 500;
+let timeouttime = 500; // time in ms to wait before re-rendering the key labels, *0.5 for scroll and wheel events
 
+// style for the labels
 let style = document.createElement('style');
 style.innerHTML = `
 .clawgrip {
@@ -162,6 +168,8 @@ document.onkeypress = async function(e) {
     if (!held.includes(e.keyCode)) {
         held.push(e.keyCode);
     }
+    // note that G and H key codes are not included in the avaible array on top of the script
+    // when G and H keys are pressed simultaneously, feel free to edit:
     if (held.includes(103) && held.includes(104)) {
         if (made == false) {
             make('all');
