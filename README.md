@@ -15,6 +15,7 @@ Such as:
 [(chrome) Pagemanipulator](https://chromewebstore.google.com/detail/page-manipulator/mdhellggnoabbnnchkeniomkpghbekko?hl=en/)
 
 These extensions should guide you on how to do what you want with my code.
+Note that whenever making use of one of these browser script injectors to **load in my script at the end of page load**.
 
 You can always also just paste this code in your browsers console for a one-time run.
 
