@@ -15,7 +15,6 @@ Such as:
 [(chrome) Pagemanipulator](https://chromewebstore.google.com/detail/page-manipulator/mdhellggnoabbnnchkeniomkpghbekko?hl=en/)
 
 These extensions should guide you on how to do what you want with my code.
-Note that whenever making use of one of these browser script injectors to **load in my script at the end of page load**.
 
 You can always also just paste this code in your browsers console for a one-time run.
 
@@ -38,6 +37,7 @@ this way you can narrow down quickly which element you want to interact with. On
 
 <h2>known issues/TODO</h2>
 
-- G and H key combo could get triggered while interacting with any input inside the Document.
+- G and H key combo could get triggered while interacting with any input elements inside the Document.
 - Elements that can be scrolled within themselves could show key labels not directly visible to the client on activation.
+- Event listeners of the page you're visiting might intervene with this script during/when activated.
 
