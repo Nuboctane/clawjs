@@ -39,5 +39,5 @@ this way you can narrow down quickly which element you want to interact with. On
 
 - G and H key combo could get triggered while interacting with any input elements inside the Document.
 - Elements that can be scrolled within themselves could show key labels not directly visible to the client on activation.
-- Event listeners of the page you're visiting might intervene with this script during/when activated.
+- Event listeners of the page you're visiting might intervene with this script when/before activated.
 
