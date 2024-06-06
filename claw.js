@@ -2,7 +2,7 @@
 // version: 1.0
 // license: None
 
-// key codes to whenever key labels are rendered
+// key codes that are available whenever key labels are rendered
 let avaible = [113, 119, 101, 114, 116, 121, 117, 105, 111, 112, 108, 107, 106, 102, 100, 115, 97, 122, 120, 99, 118, 98, 110, 109, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57];
 let occupied = [];
 let made = false;
